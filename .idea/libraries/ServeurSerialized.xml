@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="ServeurSerialized">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/ATL/Code/TD02/ClientServer-master-d388ac2722faf5bc16a0aa2772945b3ae26fab43/Serialized/ServeurSerialized/dist/ServeurSerialized.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
