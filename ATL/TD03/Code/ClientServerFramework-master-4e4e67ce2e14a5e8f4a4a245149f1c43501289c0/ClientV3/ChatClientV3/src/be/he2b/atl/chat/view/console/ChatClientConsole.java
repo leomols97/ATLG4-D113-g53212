@@ -24,9 +24,9 @@ public class ChatClientConsole implements Observer {
     public static void main(String[] args) {
         ChatClient client = null;
         try {
-            String host = "localhost";
+            String host = "192.168.16.216";
             int port = 12_345;
-            String name = "g12345";
+            String name = "Leeeeeeo";
             String password = "";
             client = new ChatClient(host, port, name, password);
             ChatClientConsole console = new ChatClientConsole(client);
@@ -61,7 +61,7 @@ public class ChatClientConsole implements Observer {
      * If the command is quit, the client disconnect from the server.
      */
     private void askCommand() {
-
+        System.out.println("Quelle commande voulez-vous exécuter ? ");
     }
 
 
@@ -75,6 +75,7 @@ public class ChatClientConsole implements Observer {
 
     @Override
     public void update(Observable o, Object arg) {
+        System.out.println("Message reçu! "+arg);
         if (arg != null) {
             Message message = (Message) arg;
             System.out.println("Message recu");

@@ -50,6 +50,8 @@ public class ChatClient extends AbstractClient {
             default:
                 throw new IllegalArgumentException("Message type unknown " + type);
         }
+        setChanged();
+        notifyObservers(msg);
     }
 
     /**

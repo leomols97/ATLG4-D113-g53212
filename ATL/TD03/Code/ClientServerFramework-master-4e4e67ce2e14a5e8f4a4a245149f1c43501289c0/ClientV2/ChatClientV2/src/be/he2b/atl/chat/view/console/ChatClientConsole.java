@@ -1,6 +1,7 @@
 package be.he2b.atl.chat.view.console;
 
 import be.he2b.atl.chat.model.ChatClient;
+import be.he2b.atl.message.MessageProfile;
 import java.io.IOException;
 import java.util.Observable;
 import java.util.Observer;
@@ -21,9 +22,9 @@ public class ChatClientConsole implements Observer {
     public static void main(String[] args) {
         ChatClient client = null;
         try {
-            String host = "localhost";
+            String host = "192.168.16.216";
             int port = 12_345;
-            String name = "g12345";
+            String name = "Mols";
             String password = "";
             client = new ChatClient(host, port, name, password);
             ChatClientConsole console = new ChatClientConsole(client);
@@ -55,8 +56,9 @@ public class ChatClientConsole implements Observer {
     @Override
     public void update(Observable o, Object arg) {
         System.out.println("Console update");
+        MessageProfile msg = (MessageProfile) arg;
         if (arg != null) {
-            System.out.println("Message : " + arg);
+            System.out.println("Message : " + msg.getAuthor());
         }
     }
 }

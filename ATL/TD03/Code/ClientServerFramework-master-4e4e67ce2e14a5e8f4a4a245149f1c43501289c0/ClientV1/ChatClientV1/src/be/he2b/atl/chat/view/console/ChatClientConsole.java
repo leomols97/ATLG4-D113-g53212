@@ -21,12 +21,13 @@ public class ChatClientConsole implements Observer {
     public static void main(String[] args) {
         ChatClient client = null;
         try {
-            String host = "localhost";
+            String host = "192.168.16.216";
             int port = 12_345;
-            String name = "g12345";
+            String name = "g53212";
             String password = "";
             client = new ChatClient(host, port, name, password);
             ChatClientConsole console = new ChatClientConsole(client);
+            client.sendToServer("Mols");
             while (true) {
             }
         } catch (IOException ex) {
