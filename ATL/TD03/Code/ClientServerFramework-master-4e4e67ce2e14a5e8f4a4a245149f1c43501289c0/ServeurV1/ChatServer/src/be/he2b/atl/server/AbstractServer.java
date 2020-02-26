@@ -1,9 +1,11 @@
-// code issu de sources disponibles depuis ici :
-// https://www.site.uottawa.ca/school/research/lloseng/supportMaterial/ocsf/ocsf.html
+/*
+ code issu de sources disponibles depuis ici :
+ https://www.site.uottawa.ca/school/research/lloseng/supportMaterial/ocsf/ocsf.html
+ This file contains material supporting section 3.8 of the textbook:
+ "Object Oriented Software Engineering" and is issued under the open-source
+ license found at www.lloseng.com
+*/
 
-// This file contains material supporting section 3.8 of the textbook:
-// "Object Oriented Software Engineering" and is issued under the open-source
-// license found at www.lloseng.com
 package be.he2b.atl.server;
 
 import java.io.*;
