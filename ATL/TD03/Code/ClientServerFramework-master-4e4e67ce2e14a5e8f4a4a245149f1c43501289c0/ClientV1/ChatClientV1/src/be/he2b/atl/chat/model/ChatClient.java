@@ -8,7 +8,7 @@ import java.io.IOException;
  * Instant messaging client.
  */
 public class ChatClient extends AbstractClient {
-
+    
     /**
      * Constructs the client. Opens the connection with the server.
      *
@@ -23,13 +23,13 @@ public class ChatClient extends AbstractClient {
         super(host, port);
         openConnection();
     }
-
+    
     @Override
     protected void handleMessageFromServer(Object msg) {
         setChanged();
         notifyObservers(msg);
     }
-
+    
     /**
      * Quits the client and closes all aspects of the connection to the server.
      *
@@ -38,5 +38,17 @@ public class ChatClient extends AbstractClient {
     public void quit() throws IOException {
         closeConnection();
     }
-
+    
+    @Override
+    protected void connectionEstablished()
+        {
+        if (isConnected())
+            {
+            System.out.println("Client connecté");
+            }
+        else
+            {
+            System.out.println("Client non connecté");
+            }
+    }
 }

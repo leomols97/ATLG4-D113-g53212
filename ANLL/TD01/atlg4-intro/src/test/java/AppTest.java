@@ -6,7 +6,8 @@
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-import static org.junit.jupiter.api.Assertions.*;
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 /**
  *
@@ -30,8 +31,8 @@ public class AppTest {
         int nb1 = 10;
         int nb2 = 32;
         //Action
-        App app = new App();
-        int result = app.sum(nb1, nb2);
+        g12345.atlg4.intro.App app    = new g12345.atlg4.intro.App();
+        int                    result = app.sum(nb1, nb2);
         //Assert
         int expected = 42;
         assertEquals(expected, result);

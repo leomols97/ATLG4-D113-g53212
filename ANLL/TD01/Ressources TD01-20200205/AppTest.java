@@ -1,8 +1,9 @@
-package g12345.atlg4.intro;
+package g53212.atlg4.intro;
 
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
-import static org.junit.jupiter.api.Assertions.*;
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class AppTest {
 
@@ -13,8 +14,8 @@ public class AppTest {
         int nb1 = 10;
         int nb2 = 32;
         //Action
-        App app = new App();
-        int result = app.sum(nb1, nb2);
+        g12345.atlg4.intro.App app    = new g12345.atlg4.intro.App();
+        int                    result = app.sum(nb1, nb2);
         //Assert
         int expected = 42;
         assertEquals(expected, result);
@@ -29,7 +30,7 @@ public class AppTest {
         //Assert
         Assertions.assertThrows(IllegalArgumentException.class, () -> {
             //Action
-            App app = new App();
+            g12345.atlg4.intro.App app = new g12345.atlg4.intro.App();
             app.div(nb1, nb2);
         });
     }
@@ -41,8 +42,8 @@ public class AppTest {
         int nb1 = 4;
         int nb2 = 2;
         //Action
-        App app = new App();
-        int result = app.div(nb1, nb2);
+        g12345.atlg4.intro.App app    = new g12345.atlg4.intro.App();
+        int                    result = app.div(nb1, nb2);
         //Assert
         int expected = 2;
         assertEquals(expected, result);
