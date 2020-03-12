@@ -371,6 +371,9 @@ public abstract class AbstractServer extends Observable implements Runnable {
      */
     @Override
     final public void run() {
+    // Cette méthode n'est pas modifiable. On pourra modifier
+    // les méthodes qui sont appelées dedans.
+    // C'est un peu comme un texte à trous dont les trous sont des hooks
         readyToStop = false;
         serverStarted();
 

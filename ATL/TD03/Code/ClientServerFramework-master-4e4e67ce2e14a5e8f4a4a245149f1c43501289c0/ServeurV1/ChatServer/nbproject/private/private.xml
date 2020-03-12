@@ -2,6 +2,10 @@
 <project-private xmlns="http://www.netbeans.org/ns/project-private/1">
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
-        <group/>
+        <group>
+            <file>file:/Users/leopoldmols/Desktop/ESI/2ème/Quadri%202/ATLG4/Code/ATL/TD03/Code/ClientServerFramework-master-4e4e67ce2e14a5e8f4a4a245149f1c43501289c0/ServeurV1/ChatServer/src/be/he2b/atl/chat/model/ChatServer.java</file>
+            <file>file:/Users/leopoldmols/Desktop/ESI/2ème/Quadri%202/ATLG4/Code/ATL/TD03/Code/ClientServerFramework-master-4e4e67ce2e14a5e8f4a4a245149f1c43501289c0/ServeurV1/ChatServer/src/be/he2b/atl/server/ConnectionToClient.java</file>
+            <file>file:/Users/leopoldmols/Desktop/ESI/2ème/Quadri%202/ATLG4/Code/ATL/TD03/Code/ClientServerFramework-master-4e4e67ce2e14a5e8f4a4a245149f1c43501289c0/ServeurV1/ChatServer/src/be/he2b/atl/chat/view/console/ChatServerConsole.java</file>
+        </group>
     </open-files>
 </project-private>

@@ -21,7 +21,9 @@ public class ChatServerConsole implements Observer {
      *
      * @param args no arguments needed.
      */
-    public static void main(String[] args) {
+    
+    public static void main(String[] args)
+    {
         try {
             ChatServer model = new ChatServer();
             ChatServerConsole console = new ChatServerConsole(model);

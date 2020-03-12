@@ -26,6 +26,7 @@ public class ChatClient extends AbstractClient {
     
     @Override
     protected void handleMessageFromServer(Object msg) {
+        System.out.println("testhandleMessageFromServer(Object msg)");
         setChanged();
         notifyObservers(msg);
     }
@@ -41,14 +42,14 @@ public class ChatClient extends AbstractClient {
     
     @Override
     protected void connectionEstablished()
-        {
+    {
         if (isConnected())
-            {
+        {
             System.out.println("Client connecté");
-            }
+        }
         else
-            {
+        {
             System.out.println("Client non connecté");
-            }
+        }
     }
 }
