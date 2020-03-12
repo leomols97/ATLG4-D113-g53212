@@ -22,7 +22,7 @@ public class ChatClientConsole implements Observer {
     public static void main(String[] args) {
         ChatClient client = null;
         try {
-            String host = "192.168.16.216";
+            String host = "localhost";
             int port = 12_345;
             String name = "Mols";
             String password = "";
@@ -31,11 +31,13 @@ public class ChatClientConsole implements Observer {
             while (true) {
             }
         } catch (IOException ex) {
-            Logger.getLogger(ChatClientConsole.class.getName()).log(Level.SEVERE, "Main error", ex);
+            Logger.getLogger(ChatClientConsole.class.getName()).
+                    log(Level.SEVERE, "Main error", ex);
             try {
                 client.quit();
             } catch (NullPointerException | IOException clientEx) {
-                Logger.getLogger(ChatClientConsole.class.getName()).log(Level.SEVERE, "Quit client error", clientEx);
+                Logger.getLogger(ChatClientConsole.class.getName()).log(
+                        Level.SEVERE, "Quit client error", clientEx);
             }
             System.exit(0);
         }

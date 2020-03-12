@@ -1,6 +1,7 @@
 package be.he2b.atl.chat.model;
 
 import be.he2b.atl.client.AbstractClient;
+import be.he2b.atl.message.MessageProfile;
 import java.io.IOException;
 
 /**
@@ -22,6 +23,7 @@ public class ChatClient extends AbstractClient {
             throws IOException {
         super(host, port);
         openConnection();
+        sendToServer(new MessageProfile(0, name)); // Permet d'afficher le nom du client au serveur
     }
     
     @Override
